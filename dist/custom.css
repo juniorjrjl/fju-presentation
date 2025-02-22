@@ -62,22 +62,22 @@
     color: #6A4E23;
 }
 
-a {
+.secure-link {
     color: white !important;
     text-decoration: none !important;
     font-size: 1.7rem !important;
 }
 
-.lock-icon {
+.secure-link .lock-icon {
     margin-right: 8px;
     transition: opacity 0.2s ease-in-out;
 }
 
-a:hover .lock-icon {
+.secure-link:hover .lock-icon {
     opacity: 0;
 }
 
-a:hover::before {
+.secure-link:hover::before {
     content: "\f3c1";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
