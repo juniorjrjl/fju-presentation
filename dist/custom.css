@@ -62,8 +62,30 @@
     color: #6A4E23;
 }
 
+a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 1.7rem !important;
+}
+
+.lock-icon {
+    margin-right: 8px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+a:hover .lock-icon {
+    opacity: 0;
+}
+
+a:hover::before {
+    content: "\f3c1";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+
 .references {
-    transform: translateX(-15%);
+    transform: translateX(-5%);
 }
 
 .social-links {
