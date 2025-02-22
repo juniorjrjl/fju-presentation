@@ -1,0 +1,11 @@
+services:
+  front:
+    build:
+      context: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/reveal.js
+      - /reveal.js/node_modules
+    command: bash start.sh
+    stdin_open: true
